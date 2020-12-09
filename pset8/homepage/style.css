@@ -1,0 +1,340 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    font-family: "Monospace";
+}
+
+.bodyHeader {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 50%;
+}
+
+.bodyHeaderH1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bodyHeaderNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.bodyHeaderNavDiv-button {
+    background-color: white;
+    color: #555;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    -webkit-transition: 0.1s;
+    transition: 0.5s;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #555;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.dropbtn:hover {
+    border: 2px solid #555;
+    -webkit-transition: 0.1s;
+    transition: 0.5s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+input[type=search] {
+    padding: 16px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    outline: none;
+    width: 50%;
+}
+
+input[type=search]:focus {
+    border: 2px solid #555;
+}
+
+.bodyDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.bodyDivSection-right {
+    width: 66%;
+}
+
+.bodyDivSectionArticleDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.bodyDivSectionArticleDivDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.bodyDivSectionArticleDivDivP {
+    width: 65%;
+}
+
+.bodyDivSectionArticleDivDivAside {
+    width: 30%;
+    font-style: italic;
+}
+
+.bodyDivSection-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 750px;
+}
+
+.bodyFooter {
+    font-weight: 800;
+}
+
+#div01 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#animationContainer {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 50px;
+    background-color: #000000;
+    transition: width 2s, height 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(45deg);
+    border-radius: 12px;
+}
+
+#animationContainer:hover {
+    width: 75px;
+    height: 75px;
+}
+
+.clockMain {    
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+}
+
+.clockHour {
+    width: 325px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.clockMinute {
+    width: 325px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.clockSecond {
+    width: 325px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.clockSep {
+    width: 150px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.clockFigureMain {
+    height: 250px;
+    width: 150px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.clock1FigureRow {
+    height: 50px;
+    width: 150px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.clock1FigureRow > div {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 12px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.calcMain {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.calcDisplay {
+    font-size: 2em;
+    width: 725px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-bottom: 12.5px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-end;
+    align-content: center;
+    padding-right: 25px;
+
+}
+
+.calcKeys {
+    width: 725px;
+    height: 475px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.calcKeyRow {
+    width: 725px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.calcKey{
+    font-size: 2em;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}

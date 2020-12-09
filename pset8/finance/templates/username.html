@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}    
+
+    <form action="/username" method="post">
+        <div class="form-group">
+            <br><p class='error'>Username must be 6 characters minimum. <br>
+            And can not be the same as before</p><br>
+            <input id='username' autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <button id='submitNewUsername' class="btn btn-primary" type="submit">Update Username</button><br>
+    </form>
+    
+    <script>
+        document.querySelector('#submitNewUsername').disabled = true;
+
+        document.querySelector('#username').onkeyup = function() {
+            let username = document.querySelector('#username').value;
+
+            if (username.length > 5) {
+                document.querySelector('#submitNewUsername').disabled = false;
+            }
+
+            else {
+                document.querySelector('#submitNewUsername').disabled = true;
+            }
+        }
+    </script>
+        
+        
+{% endblock %}
